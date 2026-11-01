@@ -1,0 +1,74 @@
+Hey please create an app similar to this : 
+
+https://scrollbibleapp.com/
+ ,please use this repository {
+
+https://github.com/morluto/rea
+} to Reverse engineer this 
+
+https://scrollbibleapp.com/
+  . but i want it for Quran .. also use this repo if you want to do research on internet (
+
+https://github.com/Panniantong/agent-reach)..(as
+ it is for QURAN , so i wont endure, tolerate, or bear  any mistakes.If you have any doubt , search on the internet and add verified info in it..now please go ahead
+2026-10-27 22:34
+I'll start by examining the workspace and researching the reference app and repos before building anything.
+
+The rea repo is a reverse-engineering toolkit (not the app itself), so I'll use it as methodology while researching the actual app. Let me dig into the reference app's features and verified Quran data sources.
+
+The reference app is a full-screen, TikTok-style verse feed with Discover, search, audio/study tools, widgets, and progress. I'll replicate that UX for the Quran — and make verified Quran text my top priority. Let me set up tasks and validate data sources.
+
+Important data issue found: the alquran.cloud Uthmani edition incorrectly prefixes the Basmala to the first verse of most surahs (e.g., 2:1 becomes "Bismillah… Alif Lam Mim"). I'll switch to a cleaner verified source and cross-check.
+
+Data sources are now clear: Quran.com's Uthmani text handles the Basmala correctly, and EveryAyah serves verified per-ayah recitations with CORS. I'll now build a validated dataset with cross-source checks.
+
+The cross-check found 276 differences — all appear to be hamza-seat encoding variants (e.g., ٱلْءَاخِر vs ٱلْـَٔاخِر), not textual differences. I'll refine the comparison to ignore orthographic seat forms while still catching any missing/extra words.
+
+Five verses differ — likely word-joining and Uthmani carrier variants, not content changes. Let me classify them precisely and check a third source before accepting the dataset.
+
+Only 2 of 6,236 verses differ at letter level, and those are documented Uthmani carrier variants (12:39, 12:41); the rest are word-joining differences. This is a solid match. I'll finalize the dataset with provenance and set up the app stack.
+
+Translation editions differ slightly (e.g., "Allāh" vs "Allah", "earned" vs "evoked"). To avoid mixing editions, I'll use Quran.com's Saheeh International for every verse, matching the Arabic source, and document it.
+
+The Qoder response was stopped by you.
+Edited 1 files
++282
+-0
++282
+-0
+2026-10-27 22:44
+Please inspect the existing project files and Git changes to understand the current state. Identify what was completed, what remains unfinished, and whether any changes were lost. Continue from the exact point where work stopped..please continue and Go ahead
+2026-10-28 10:07
+I'll audit the workspace and the verification outputs first, then continue from the exact point where the build stopped.
+
+State audit: the verified Quran dataset is complete (114 surahs, 6,236 ayahs, checksum recorded, cross-source checked). No app scaffold exists yet, and no git history exists — so nothing was lost. I'll continue by scaffolding the application and wiring in the verified dataset.
+
+Dataset and research assets are intact. I'm now scaffolding the React app and will build the reader, discovery, search, saved verses, audio, sharing, and offline support on top of the verified data.
+
+The app shell, navigation, surah/juz browser, settings, and share-card engine are in place. Next is the core reader: swipe/wheel navigation, recitation, bookmarks, sharing, and auto-scroll.
+
+The verified dataset has a handful of punctuation artifacts from the Quran.com API. I’m normalizing those against the independent Tanzil distribution before finishing the UI, then regenerating the checksum and report.
+
+Now the visual system. I’m writing the full stylesheet for all surfaces — themes, reader, sheets, discovery, search, saved, and about — then I’ll build and run it in a browser.
+
+I'll finish the icon pipeline, then run the build to surface any issues.
+
+The build is running in the background. Meanwhile I'll write the verification script — let me check the exact helper APIs it should mirror.
+
+Root cause was the nullable dataset in context; the reader now uses index.dataset. While the build finishes, I'll confirm Node can import the TS helpers directly for the verifier.
+
+Build passed. I'll check text-hygiene stats before locking strict rules into the verifier.
+
+Node imports the TS helpers cleanly, so the verifier can test the real search/normalization code. Writing it now.
+
+All 1,668 integrity checks pass. Now the build output and remaining docs.
+
+Verification and docs done. Now I'll run the app and test the reader, search, bookmarks, settings, sharing, and audio in the browser.
+
+The hidden in-app browser pauses exit animations, so I'll check the tool's options for a fresh visible/headless tab.
+
+The in-app browser can't render. I'll drive a headless Chrome over CDP with a small temp Node script instead. First, the storage keys and component selectors I need.
+
+The Qoder response was stopped by you.
+2026-10-28 10:07
+Please inspect the existing project files and Git changes to understand the current state. Identify what was completed, what remains unfinished, and whether any changes were lost. Continue from the exact point where work stopped..please continue and Go ahead

@@ -1,0 +1,113 @@
+{
+  "counts": {
+    "surahs": 114,
+    "ayahs": 6236
+  },
+  "checksum": "e970f81557e178e61560ad0c3b6f427c7767ab3f47bef86b858cbe0fb97fa3df",
+  "crossSource": {
+    "comparedVerses": 6236,
+    "wordLevelMismatches": 5,
+    "letterSeqMismatchesIgnoringSpaces": 2,
+    "knownVariantRefs": [
+      "2:181",
+      "8:6",
+      "12:39",
+      "12:41",
+      "13:37"
+    ],
+    "note": "Word-level differences are Uthmani word-joining (بعدما / بعد ما) and hamza-carrier variants. 12:39 and 12:41 differ only in the traditional ى carrier used for the long ā in صىحبى."
+  },
+  "translationCrossCheck": {
+    "against": "Al Quran Cloud en.sahih",
+    "normalizedDiffs": 1109,
+    "note": "Remaining differences are edition wording and transliteration diacritics (e.g. Allah/Allāh).",
+    "samples": [
+      "1:7",
+      "2:23",
+      "2:24",
+      "2:30",
+      "2:47",
+      "2:49",
+      "2:51",
+      "2:54",
+      "2:58",
+      "2:59",
+      "2:60",
+      "2:73",
+      "2:75",
+      "2:78",
+      "2:80",
+      "2:81",
+      "2:84",
+      "2:87",
+      "2:89",
+      "2:95"
+    ]
+  },
+  "translationPunctuationNormalization": {
+    "refs": [
+      "18:4",
+      "37:92",
+      "54:47",
+      "79:25",
+      "114:6"
+    ],
+    "note": "Five terminal punctuation artifacts in Quran.com resource 20 were corrected against the independent Tanzil en.sahih distribution. Wording is unchanged: three closing quotation marks were placed after the terminal punctuation, and two doubled full stops were reduced to one."
+  },
+  "bismillah": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+  "firstVerseSample": {
+    "1:1": {
+      "n": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+      "english": "In the name of Allāh, the Entirely Merciful, the Especially Merciful."
+    },
+    "2:1": {
+      "n": 1,
+      "arabic": "الٓمٓ",
+      "english": "Alif, Lām, Meem."
+    }
+  },
+  "lastVerse": {
+    "114:6": {
+      "n": 6,
+      "arabic": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+      "english": "From among the jinn and mankind.\""
+    }
+  },
+  "juzBoundaries": [
+    {
+      "number": 1,
+      "start": {
+        "surah": 1,
+        "ayah": 1
+      },
+      "end": {
+        "surah": 2,
+        "ayah": 141
+      }
+    },
+    {
+      "number": 2,
+      "start": {
+        "surah": 2,
+        "ayah": 142
+      },
+      "end": {
+        "surah": 2,
+        "ayah": 252
+      }
+    },
+    {
+      "number": 3,
+      "start": {
+        "surah": 2,
+        "ayah": 253
+      },
+      "end": {
+        "surah": 3,
+        "ayah": 92
+      }
+    }
+  ],
+  "translationHtmlLeaks": 0
+}

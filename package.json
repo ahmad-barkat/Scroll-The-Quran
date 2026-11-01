@@ -1,0 +1,36 @@
+{
+  "name": "scroll-the-quran",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A full-screen, verse-by-verse Quran reader inspired by social feeds.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "data:build": "node .research/build-dataset.mjs",
+    "data:verify": "node scripts/verify-quran.mjs && node scripts/check-checksum.mjs",
+    "verify:quran": "node scripts/verify-quran.mjs",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource/amiri": "^5.3.0",
+    "@fontsource/amiri-quran": "^5.3.0",
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "framer-motion": "^14.7.1",
+    "lucide-react": "^1.62.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vite-plugin-pwa": "^2.0.0"
+  }
+}

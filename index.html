@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#070b14" />
+    <meta
+      name="description"
+      content="Scroll the Quran — a calm, full-screen Quran reader. One ayah at a time, with verified Uthmani text, translation, and recitation."
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Scroll Quran" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icons/icon-180.png" />
+    <link rel="preconnect" href="https://everyayah.com" crossorigin />
+    <title>Scroll the Quran — The Quran, one ayah at a time</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        background: #070b14;
+        color: #f4ead8;
+      }
+      #boot {
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', serif;
+        letter-spacing: 0.02em;
+      }
+      #boot svg {
+        display: block;
+        margin: 0 auto 18px;
+        color: #d8b56a;
+        animation: boot-pulse 2.4s ease-in-out infinite;
+      }
+      #boot span {
+        display: block;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        font-size: 10px;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+        color: #8f9ab0;
+      }
+      @keyframes boot-pulse {
+        0%,
+        100% {
+          opacity: 0.55;
+          transform: scale(0.97);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="boot">
+        <div>
+          <svg width="56" height="56" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <path
+              d="M32 4 39.8 15.2 53.9 12.4 51.1 26.5 62 34 51.1 41.5 53.9 55.6 39.8 52.8 32 64 24.2 52.8 10.1 55.6 12.9 41.5 2 34 12.9 26.5 10.1 12.4 24.2 15.2 32 4Z"
+              stroke="currentColor"
+              stroke-width="1.4"
+              opacity="0.9"
+            />
+            <circle cx="32" cy="34" r="9.5" stroke="currentColor" stroke-width="1.4" />
+            <circle cx="32" cy="34" r="2.4" fill="currentColor" />
+          </svg>
+          <div style="font-size: 22px; color: #f4ead8">Scroll the Quran</div>
+          <span style="margin-top: 8px">Preparing the text</span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
